@@ -1,0 +1,1182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #002868;
+    --secondary: #cd1326;
+    --white: #fff;
+    --dark: #111
+}
+
+body {
+    margin: 0;
+    padding: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth
+}
+
+input[type=date], input[type=email], input[type=tel], input[type=text], select, textarea {
+    background: 0 0;
+    border: solid 1px #eee;
+    color: #444;
+    background: #fff;
+    font-size: 14px;
+    line-height: normal;
+    margin: 0 0 12px;
+    padding: 9px 14px;
+    width: 100%;
+    outline: 0;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type=submit] {
+    color: var(--white);
+    background: var(--primary);
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 30px;
+    font-size: 14px;
+    border: 0;
+    letter-spacing: .8px;
+    cursor: pointer;
+    outline: 0;
+    font-weight: 600;
+    border-radius: 4px;
+    font-family: Lato, sans-serif
+}
+
+input[type=submit]:hover {
+    background: #277cc0;
+    color: var(--white);
+    transition: .8s
+}
+
+textarea {
+    height: 100px;
+    margin-bottom: 5px
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+    font-weight: 400;
+    text-transform: inherit;
+    line-height: normal
+}
+
+h1 {
+    font-size: 28px
+}
+
+h2 {
+    font-size: 24px
+}
+
+h3 {
+    font-size: 22px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+p {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400
+}
+
+a, li, ul {
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    line-height: 24px;
+    font-size: 14px
+}
+
+a:hover {
+    transition: 0.8s;
+    text-decoration: none;
+}
+
+.heading, .leftheading {
+    margin-bottom: 25px;
+    font-size: 30px;
+    position: relative;
+    font-weight: 700
+}
+
+.heading {
+    text-align: center
+}
+
+.heading span, .leftheading span {
+    color: var(--secondary);
+}
+
+.subheading {
+    width: 80%;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #121212;
+    font-family: 'Open Sans', sans-serif
+}
+
+.zoomeffect {
+    overflow: hidden;
+    position: relative
+}
+
+.zoomeffect img {
+    transition: transform .8s ease-in-out
+}
+
+.zoomeffect:hover img {
+    transform: scale(1.1)
+}
+
+/* HEADER SECTION CSS */
+
+
+header .row {
+    align-items: center
+}
+
+.menucontainer ul {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menucontainer ul li:last-child a {
+    padding-right: 0;
+}
+
+.menucontainer ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menucontainer ul li a {
+    display: inline-block;
+    font-size: 14.5px;
+    color: var(--dark);
+    padding: 42px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+}
+
+/* SLIDER SECTION CSS */
+
+
+.mainbanner {
+    position: relative;
+}
+
+.mainbanner img {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+}
+
+.mainbanner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbanner-content .row {
+    align-items: center;
+}
+
+.mainbanner-content h1 {
+    font-size: 40px;
+    text-align: center;
+    color: var(--white);
+    font-weight: 700;
+    margin: 0;
+    line-height: 52px;
+}
+
+.mainbanner-content h1 span {
+    color: var(--secondary);
+}
+
+.banner-form h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.banner-form {
+    background: #0d1b25b8;
+    padding: 25px 30px 35px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.banner-form .row {
+    margin: 0;
+}
+
+.banner-form .col-sm-6, .banner-form .col-sm-12 {
+    padding: 0px 6px;
+}
+
+.banner-form input {
+    margin-bottom: 15px;
+}
+
+.banner-form input[type=submit] {
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+/* HOMEABOUT SECTION CSS */
+
+.homeabout {
+    padding: 60px 0;
+}
+
+.homeabout .row {
+    display: flex;
+    align-items: center
+}
+
+.aboutus-cnt {
+    background: #fff;
+    padding: 25px 35px 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #ddd;
+    margin-left: 5px;
+}
+
+.aboutus-cnt h2.leftheading {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.aboutus-cnt p {
+    text-align: justify
+}
+
+.aboutus-cnt a.btn {
+    margin-top: 15px
+}
+
+.homeabout img {
+    width: 100%;
+    height: 390px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* WHYUS SECTION CSS */
+
+.whyus {
+    padding: 50px 0 60px;
+    text-align: center;
+    background: #fafaff;
+}
+
+.whyus .col-sm-3 {
+    margin: 12px 0;
+}
+
+.whyuslist {
+    background: var(--white);
+    box-shadow: 0 0 15px #dddddd85;
+    transition: all ease .5s;
+    border-radius: 8px;
+    padding: 30px 16px;
+    height: 100%;
+    border-top: 3px solid var(--primary);
+    border-bottom: 3px solid transparent;
+}
+.whyuslist:hover {
+    transform: translateY(-10px);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid var(--secondary);
+}
+.whyuslist h4 {
+    font-weight: 700;
+    margin: 18px 0 10px;
+    font-size: 18px;
+}
+
+.whyuslist p {
+    margin: 0;
+}
+
+
+/* TOP-SELLING SECTION CSS */
+
+.top-selling {
+    padding: 50px 0 60px;
+}
+
+.topslnglist {
+    box-shadow: 0 0 12px #0000001a;
+}
+.topslnglist figure {
+    overflow: hidden;
+}
+.topslnglist img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: .5s;
+}
+.topslnglist:hover img {
+    transform: scale(1.1);
+}
+.topslnglist-info {
+    padding: 20px;
+}
+.topslnglist h4 {
+    font-weight: 600;
+    margin: 0 0 14px;
+}
+
+.topslnglist ul li {
+    position: relative;
+    padding-left: 17px;
+    line-height: 26px;
+}
+
+.topslnglist ul li:before {
+    position: absolute;
+    content: '\f192';
+    left: 0;
+    top: 1px;
+    font-size: 10px;
+    font-family: 'Font Awesome 5 Free';
+    color: var(--secondary);
+}
+
+
+/* OUR RANGE SECTION CSS */
+
+.ourrange {
+    padding: 50px 0 60px;
+    background: #f8f8f8;
+}
+
+.ourrangelist img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ourrangelist {
+    position: relative;
+}
+
+.ourrangelist h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000c4;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.ourrangelist:hover h4 {
+    opacity: 1;
+}
+
+
+
+/* PARTNER SECTION CSS */
+
+.partner {
+    padding: 55px 0;
+}
+
+.partner ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partner ul li {
+    width: 16%;
+    height: 140px;
+    margin: 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.partner ul li h4 {
+    color: var(--secondary);
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    opacity: 0;
+    transition: .5s;
+}
+
+.partner ul li:hover h4 {
+    opacity: 1;
+}
+
+.partner ul li a {
+    position: relative;
+    z-index: 1;
+}
+
+.partner ul li:after {
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+    transform: scaleX(0);
+}
+
+.partner ul li:hover:after {
+    transform: scaleX(1.0);
+}
+
+.partner ul li:before {
+    border-right: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+    transform: scaleY(0);
+}
+
+.partner ul li:hover:before {
+    transform: scaleY(1.0);
+}
+
+.partner ul li:before, .partner ul li:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.partner li img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* WEOFFER SECTION CSS */
+
+.weoffer {
+    padding: 70px 0;
+    background: linear-gradient(122deg, #002868, #00000000), url(../images/weoffer-bg.jpg);
+}
+
+.weoffer h2 strong {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.weoffer h2 strong:after {
+    content: '';
+    height: 2px;
+    width: 45px;
+    position: absolute;
+    background: var(--secondary);
+    top: 50%;
+    left: 165px;
+}
+
+.weoffer h2 {
+    font-size: 34px;
+    color: var(--white);
+}
+
+.weoffer-content {
+    width: 44%;
+}
+
+
+/* FREE QUOTE SECTION CSS */
+
+.freequote {
+    text-align: center;
+    box-shadow: 0 0 12px #0000001a;
+    padding: 20px 30px 30px;
+    border-radius: 8px;
+    border: 1px dashed var(--primary);
+    margin: 60px 0;
+}
+
+.freequote p {
+    margin: 15px 0 25px;
+}
+
+.freequote h2.heading {
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+
+
+/* BENEFIT SECTION CSS */
+
+.benefit {
+    text-align: center;
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+
+.benefit .row {
+    justify-content: center;
+}
+
+.benefititems {
+    padding: 35px 30px;
+    border-radius: 8px;
+    margin: 12px 0;
+    transition: .5s;
+    background: var(--white);
+}
+
+.benefititems:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 12px #0000001a;
+    background: var(--primary);
+}
+
+.benefititems figure {
+    height: 110px;
+    width: 110px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed var(--primary);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.benefititems:hover figure {
+    transform: rotate(360deg);
+    background: var(--white);
+    border-color: var(--white);
+}
+
+.benefititems:hover p, .benefititems:hover h4 {
+    color: var(--white);
+}
+
+.benefititems h4 {
+    font-weight: 600;
+    margin: 20px 0 12px;
+    transition: .5s;
+}
+
+.benefititems p {
+    margin: 0;
+    transition: .5s;
+}
+
+
+/* RECYCLED AND USED AUTO PARTS SECTION CSS */
+
+.whybuy {
+    padding: 50px 0 60px;
+}
+
+.whybuy .row {
+    align-items: center;
+}
+
+.whybuy figure img {
+    border-radius: 4px;
+    width: 100%;
+    height: 312px;
+}
+
+
+/* HOME REVIEW SECTION CSS */
+
+
+.reviews {
+    padding: 50px 0 60px;
+    background: #fafaff;
+}
+
+.reviews .slick-track {
+    padding: 12x 0 !important
+}
+
+.reviewslist {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 35px 30px 60px 30px;
+    position: relative;
+    box-shadow: 0 0 12px #0000001a;
+}
+
+.reviewlist-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    column-gap: 14px
+}
+
+.reviews img {
+    height: 65px !important;
+    border-radius: 50%;
+}
+
+.reviewslist h5 {
+    margin: 0;
+    font-weight: 600
+}
+
+.reviewslist h5 span {
+    display: block;
+    font-size: 15px;
+    margin-top: 4px;
+    font-weight: 500;
+    color: var(--primary)
+}
+
+.reviewslist .rating i {
+    color: #ff8e2d;
+    font-size: 14px
+}
+
+.reviewslist p {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 500;
+    margin: 0
+}
+
+.reviewslist i.fas.fa-quote-left {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    font-size: 64px;
+    color: var(--primary);
+    opacity: .1
+}
+
+.rating {
+    margin: 18px 0
+}
+
+
+
+/* USER AUTO PARTS CSS */
+
+.usedautopart {
+    padding: 60px 0;
+    text-align: center;
+    background: url(../images/usedautopart-bg.jpg) no-repeat center center/cover;
+}
+
+.usedautopart h4 a {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.usedautopart h2, .usedautopart h4 a {
+    color: var(--white);
+    margin: 0;
+}
+
+.usedautopart h4 a i {
+    font-size: 19px;
+    margin-right: 4px;
+}
+
+.usedautopart h4 {
+    margin: 20px 0 30px;
+}
+
+
+/* FOOTER SECTION CSS */
+
+footer {
+    padding: 55px 0 0;
+}
+
+footer figure {
+    margin-bottom: 20px;
+}
+
+footer .col-sm-3:nth-child(2) {
+    padding-left: 70px;
+}
+
+footer .col-sm-3:last-child {
+    padding-left: 80px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+footer ul.ft-menu li a {
+    display: inline-block;
+    padding-left: 17px;
+}
+
+footer ul.ft-menu li a:before {
+    position: absolute;
+    content: '\f192';
+    left: 0;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 10px;
+    color: var(--secondary);
+    top: 2px;
+}
+
+footer ul.ft-menu li a:hover {
+    color: var(--secondary)
+}
+
+footer h3 {
+    font-weight: 600;
+    margin-bottom: 21px;
+    font-size: 18px;
+}
+
+footer ul.footer-details li i {
+    margin-right: 5px;
+    color: var(--secondary);
+}
+
+footer ul.socialicon {
+    display: flex;
+    column-gap: 8px;
+    justify-content: flex-end;
+}
+
+footer ul.socialicon li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 38px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+footer ul.socialicon li a:hover {
+    background: var(--primary)
+}
+
+footer .ftdetails li i {
+    margin-right: 8px
+}
+
+.copyright {
+    margin-top: 30px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+}
+
+.copyright .row {
+    align-items: center;
+}
+
+.copyright p {
+    margin: 0 !important
+}
+
+/* GO TO TOP CSS */
+
+#GoToTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 22px;
+    z-index: 99999999;
+    padding: 0;
+    background: var(--primary);
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px
+}
+
+#GoToTop i {
+    display: block;
+    padding-bottom: 3px
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .menutop li a {
+        font-size: 13.5px !important;
+        padding: 42px 12px !important;
+    }
+
+    .mainbanner img {
+        height: 500px;
+    }
+
+    .banner-form {
+        padding: 20px 20px 25px;
+    }
+
+    .mainbanner-content h1 {
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    footer .col-sm-3:last-child {
+        padding-left: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .menucontainer {
+        display: none !important;
+    }
+
+    #rmp_menu_trigger-197 {
+        float: right;
+    }
+
+    .menubar {
+        padding: 6px 0;
+    }
+
+    .menubar img {
+        width: 190px;
+    }
+
+    .mainbanner-content h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .banner-form .col-sm-6 {
+        width: 100%;
+    }
+
+    .banner-form input, .banner-form select {
+        margin-bottom: 7px;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .banner-form h2 {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .aboutus-cnt {
+        padding: 20px 25px 25px;
+    }
+
+    .aboutus-cnt h2.leftheading {
+        font-size: 22px;
+    }
+
+    .homeabout img {
+        height: 430px;
+    }
+
+    .heading, .leftheading {
+        margin-bottom: 18px;
+        font-size: 24px;
+    }
+
+    .whyus .col-sm-3 {
+        margin: 10px 0;
+        width: 33.3%;
+    }
+
+    .top-selling .col-sm-4 {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .partner ul {
+        justify-content: center;
+        column-gap: 8px;
+    }
+
+    .partner ul li {
+        width: 19%;
+        height: 130px;
+        margin: 4px 0;
+    }
+
+    .weoffer h2 {
+        font-size: 25px;
+    }
+
+    .freequote {
+        padding: 20px 20px 30px;
+    }
+
+    .benefit .col-sm-4 {
+        width: 50%;
+    }
+
+    .accordion-button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .accordion-item p {
+        margin: .0;
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    footer .col-sm-3:nth-child(2), footer .col-sm-3:last-child {
+        padding-left: 30px;
+    }
+
+    footer .col-sm-4, footer .col-sm-3, footer .col-sm-2 {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .copyright .col-sm-4, .copyright .col-sm-8 {
+        margin: 0;
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .mainbanner img {
+        height: 600px;
+    }
+
+    .mainbanner-content .col-sm-6 {
+        width: 100%;
+    }
+
+    .banner-form {
+        text-align: center;
+    }
+
+    .homeabout .col-sm-5, .homeabout .col-sm-7 {
+        width: 100%;
+    }
+
+    .homeabout img {
+        height: 300px;
+        margin-bottom: 15px;
+    }
+
+    .homeabout {
+        padding: 35px 0;
+    }
+
+    .whyus, .top-selling, .ourrange, .partner, .weoffer, .whybuy, .mileage, .reviews, .usedautopart {
+        padding: 30px 0;
+    }
+
+    .whyus .col-sm-3 {
+        width: 50%;
+    }
+
+    .top-selling .col-sm-4 {
+        width: 100%;
+        margin: 7px 0;
+    }
+
+    .partner ul li {
+        width: 23.8%;
+        height: 125px;
+        margin: 3px 0;
+        padding: 15px;
+    }
+
+    .weoffer-content {
+        width: 84%;
+    }
+
+    .freequote {
+        margin: 30px 0;
+    }
+
+    .freequote h2.heading {
+        font-size: 22px;
+    }
+
+    .whybuy .col-sm-4, .whybuy .col-sm-8 {
+        width: 100%;
+    }
+
+    .whybuy figure img {
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .accordion-button {
+        padding: 8px 15px;
+    }
+
+    .accordion-button::after {
+        top: 8px;
+    }
+
+    .benefit {
+        padding: 30px 0;
+    }
+
+    .benefit .col-sm-4 {
+        width: 100%;
+    }
+
+    .benefititems {
+        margin: 7px 0;
+    }
+
+    .mileage .col-sm-8, .mileage .col-sm-4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mileage a.btn {
+        float: inherit;
+        margin-top: 12px;
+    }
+
+    footer {
+        padding: 30px 0 0;
+    }
+
+    footer .col-sm-4, footer .col-sm-3, footer .col-sm-2 {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 12px !important;
+    }
+
+    .copyright .col-sm-4, .copyright .col-sm-8 {
+        width: 100%;
+    }
+
+    footer ul.socialicon {
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 569px) {
+    .ourrangelist {
+        margin: 7px 0;
+    }
+
+    button.slick-next.slick-arrow {
+        right: 0 !important;
+    }
+
+    button.slick-prev.slick-arrow {
+        left: 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .partner ul li {
+        width: 30%;
+    }
+
+    .heading, .leftheading {
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .weoffer h2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .mainbanner-content h1 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .whyus .col-sm-3 {
+        width: 100%;
+        margin: 7px 0;
+    }
+
+    .partner ul li {
+        height: 115px;
+    }
+
+}
